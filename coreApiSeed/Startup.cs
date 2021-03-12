@@ -20,9 +20,9 @@ namespace coreApiSeed
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<Context>(opt => opt.UseInMemoryDatabase(databaseName: "BancoTeste"));
             services.AddControllers();
-
+            services.AddEntityFrameworkNpgsql()
+             .AddDbContext<Context>(options => options.UseNpgsql(Configuration.GetConnectionString("TesteApiDB")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
