@@ -74,3 +74,8 @@ C:\Users\viniciusmargotti\Desktop\coreApiSeed\NetCoreApiSeed\coreApiSeed\bin\Deb
 C:\Users\viniciusmargotti\Desktop\coreApiSeed\NetCoreApiSeed\coreApiSeed\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\viniciusmargotti\Desktop\coreApiSeed\NetCoreApiSeed\coreApiSeed\bin\Debug\netcoreapp3.1\Humanizer.dll
 C:\Users\viniciusmargotti\Desktop\coreApiSeed\NetCoreApiSeed\coreApiSeed\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\viniciusmargotti\Desktop\coreApiSeed\NetCoreApiSeed\coreApiSeed\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\viniciusmargotti\Desktop\coreApiSeed\NetCoreApiSeed\coreApiSeed\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\viniciusmargotti\Desktop\coreApiSeed\NetCoreApiSeed\coreApiSeed\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\viniciusmargotti\Desktop\coreApiSeed\NetCoreApiSeed\coreApiSeed\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\viniciusmargotti\Desktop\coreApiSeed\NetCoreApiSeed\coreApiSeed\obj\Debug\netcoreapp3.1\coreApiSeed.MvcApplicationPartsAssemblyInfo.cs

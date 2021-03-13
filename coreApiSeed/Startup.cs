@@ -21,8 +21,21 @@ namespace coreApiSeed
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
             services.AddEntityFrameworkNpgsql()
              .AddDbContext<Context>(options => options.UseNpgsql(Configuration.GetConnectionString("TesteApiDB")));
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "ApiTest",
+                    Description = ".NET Core Web Api"
+                });
+            });
+
+            var xmlFile = $"swagger.xml";
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +53,14 @@ namespace coreApiSeed
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.RoutePrefix = "swagger";
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Apitest");
             });
         }
     }

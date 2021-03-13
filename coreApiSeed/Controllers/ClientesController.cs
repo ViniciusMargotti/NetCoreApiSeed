@@ -19,14 +19,18 @@ namespace coreApiSeed.Controllers
             _context = context;
         }
 
-        // GET: api/Clientes
+        /// <summary>
+        /// GET: api/Clientes
+        /// </summary>
         [HttpGet]
         public IEnumerable<Cliente> GetCliente()
         {
             return _context.Cliente;
         }
 
-        // GET: api/Clientes/5
+        /// <summary>
+        /// GET: api/Clientes/5
+        /// </summary>
         [HttpGet("{id}")]
         public async Task<IActionResult> GetCliente([FromRoute] int id)
         {
@@ -45,7 +49,10 @@ namespace coreApiSeed.Controllers
             return Ok(cliente);
         }
 
-        // PUT: api/Clientes/5
+
+        /// <summary>
+        /// PUT: api/Clientes/5
+        /// </summary>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCliente([FromRoute] int id, [FromBody] Cliente cliente)
         {
@@ -80,7 +87,10 @@ namespace coreApiSeed.Controllers
             return NoContent();
         }
 
-        // POST: api/Clientes
+
+        /// <summary>
+        /// POST: api/Clientes
+        /// </summary>
         [HttpPost]
         public async Task<IActionResult> PostCliente([FromBody] Cliente cliente)
         {
@@ -95,7 +105,10 @@ namespace coreApiSeed.Controllers
             return CreatedAtAction("GetCliente", new { id = cliente.ClienteId }, cliente);
         }
 
-        // DELETE: api/Clientes/5
+
+        /// <summary>
+        /// DELETE: api/Clientes/5
+        /// </summary>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCliente([FromRoute] int id)
         {
