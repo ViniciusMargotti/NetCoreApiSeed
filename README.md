@@ -45,3 +45,14 @@ Esse novo recurso permite o mapeamento/persistência de classes POCO e geração
 ### Para mais informações sobre como implementar o CodeFirst
 > **https://medium.com/faun/asp-net-core-entity-framework-core-with-postgresql-code-first-d99b909796d7 (13/03/2021)**
 
+
+# Swagger
+
+### Para acessar a documentação basta executar a aplicação e acessar 
+> **http://localhost:35551/swagger/index.html**
+
+### Dependencias 
+> **SwashBuckle.AspNetCore V6.1.0** 
+
+
+
