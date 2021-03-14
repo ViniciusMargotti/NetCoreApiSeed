@@ -1,0 +1,50 @@
+name: DemoNewCd
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Run a one-line script
+      run: echo Hello,word!
+       
+  deploy-dev:
+
+    runs-on: ubuntu-latest
+    environment:
+      name: dev
+      url: 'viniciusmargotti.com.br'
+    needs: build 
+    steps:
+    - name: Run a one-line script
+      run: echo Deploy Dev
+      
+  deploy-hmg:
+
+    runs-on: ubuntu-latest
+    environment:
+      name: hmg
+      url: 'viniciusmargotti.com.br'
+    needs: deploy-dev 
+    steps:
+    - name: Run a one-line script
+      run: echo Deploy Hmg
+      
+  deploy-prd:
+
+    runs-on: ubuntu-latest
+    environment:
+      name: prd
+      url: 'viniciusmargotti.com.br'
+    needs: deploy-hmg 
+    steps:
+    - name: Run a one-line script
+      run: echo Deploy prd
+      
+      
+      
+      
